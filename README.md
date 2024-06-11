@@ -41,7 +41,7 @@ Navigate to the home page.
 Click on the name of a contact to view its details.
 The details page will display the contact's name along with all associated phone numbers.
 Adding Multiple Phone Numbers
-When adding or editing a contact, use the provided form to input multiple phone numbers for the contact.
+When adding or editing a contact, use the provided form to input multiple phone numbers for the contact
 Contributing
 Contributions to the Phonebook App are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
