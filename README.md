@@ -1,17 +1,48 @@
-# task : project name
-phonebook app 
-Allows the user to add contacts and their multi numbers
-each contact can have more than one number
+The Phonebook App 
+is a simple Django-based web application that allows users to manage their contacts and their multiple phone numbers. Users can add new contacts, assign multiple phone numbers to each contact, view all contacts, and access contact details including their phone numbers.
 
-the user can view all of the contacts and by pressing on the name he will be drived to the contact details 
-that contain contact phone numbers
+Installation
+-To set up the Phonebook App on your local machine, follow these steps:
 
-requiements to install for starting this app: {
-asgiref
-Django
-pillow
-sqlparse
-tzdata
-}
+Clone the repository:
+
+bash
+*Copy code
+-git clone https://github.com/mohmmedshaker69/task
+-cd myproject
+
+bash
+*Copy code
+-pip install -r requirements.txt
+-Apply database migrations:
+
+bash
+Copy code
+-python manage.py makemigrations
+-python manage.py migrate
+Start the development server:
+
+bash
+Copy code
+python manage.py runserver
+Access the application in your web browser at http://127.0.0.1:8000/.
+
+Usage
+Adding Contacts
+Navigate to the home page.
+Click on the "Add Contact" button.
+Fill in the contact details, including the name and phone number(s).
+Click the "Submit" button to add the contact.
+Viewing Contacts
+Navigate to the home page.
+View all the contacts listed on the page.
+Viewing Contact Details
+Navigate to the home page.
+Click on the name of a contact to view its details.
+The details page will display the contact's name along with all associated phone numbers.
+Adding Multiple Phone Numbers
+When adding or editing a contact, use the provided form to input multiple phone numbers for the contact.
+Contributing
+Contributions to the Phonebook App are welcome! If you encounter any issues or have suggestions for improvements, please feel free to open an issue or submit a pull request.
 
 ![Screenshot (99)](https://github.com/mohmmedshaker69/task/assets/89956676/007b42aa-0395-44e6-9df6-936958b98339)
