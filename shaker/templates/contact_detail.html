@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %}
+Contact Detail
+{% endblock %}
+
+{% block content %}
+  <h2 class="text-2xl font-semibold mb-4">{{ contact.name }}</h2>
+  <p class="text-lg font-semibold mb-2">Phone Numbers:</p>
+  <ul class="mb-4">
+    {% for phone_number in phones %}
+      <li class="text-lg">{{ phone_number.number }}</li>
+    {% empty %}
+      <li class="text-lg">No phone numbers available</li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'contact_list' %}" class="px-6 py-3 text-lg font-semibold bg-gray-500 text-white rounded-xl hover:bg-gray-700 mt-6 inline-block">Back to Contact List</a>
+  <a href="{% url 'phone_number_form' contact.pk %}" class="px-6 py-3 text-lg font-semibold bg-orange-500 text-white rounded-xl hover:bg-orange-700 mt-6 inline-block">Add Phone Number</a>
+{% endblock %}

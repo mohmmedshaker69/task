@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block title %}
+Add Contact Name
+{% endblock %}
+
+{% block content %}
+  <h2 class="text-2xl font-semibold mb-4">Add Contact Name</h2>
+  <form method="post" class="space-y-4">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="px-6 py-3 text-lg font-semibold bg-blue-500 text-white rounded-xl hover:bg-blue-700">Add</button>
+  </form>
+{% endblock %}

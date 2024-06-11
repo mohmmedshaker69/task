@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}
+Contact List
+{% endblock %}
+
+{% block content %}
+  <h2 class="text-2xl font-semibold mb-4">Contact List</h2>
+  <ul class="mt-4 space-y-2">
+    {% for contact in contacts %}
+      <li>
+        <a href="{% url 'contact_detail' contact.id %}" class="px-6 py-3 text-lg font-semibold bg-gray-500 text-white rounded-xl hover:bg-gray-700 mt-6 inline-block">{{ contact.name }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+  <a href="{% url 'contact_form' %}" class="px-6 py-3 text-lg font-semibold bg-green-500 text-white rounded-xl hover:bg-orange-700 mt-6 inline-block">Add New Contact</a>
+{% endblock %}
