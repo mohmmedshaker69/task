@@ -6,27 +6,29 @@ is a simple Django-based web application that allows users to manage their conta
 Installation
 -To set up the Phonebook App on your local machine, follow these steps:
 
+NOTE {PLEASE COPY EVERY NUMBERED LINE IN YOUR TERMINAL WITHOUT THE NUBER AND THE DASH}
+
 Clone the repository:
 
 bash
 *Copy code
-git clone https://github.com/mohmmedshaker69/task
-cd myproject
+1-git clone https://github.com/mohmmedshaker69/task
+2-cd myproject
 
 bash
 *Copy code
--pip install -r requirements.txt
--Apply database migrations:
+1-pip install -r requirements.txt
+2-Apply database migrations:
 
 bash
 Copy code
--python manage.py makemigrations
--python manage.py migrate
+1-python manage.py makemigrations
+2-python manage.py migrate
 Start the development server:
 
 bash
 Copy code
-python manage.py runserver
+1-python manage.py runserver
 Access the application in your web browser at http://127.0.0.1:8000/.
 
 Usage
