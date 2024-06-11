@@ -137,7 +137,6 @@ __pypackages__/
 .local_cache/
 
 # Django migrations
-**/migrations/
 
 # Mac OS
 .DS_Store
