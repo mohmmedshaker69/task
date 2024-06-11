@@ -10,8 +10,8 @@ Clone the repository:
 
 bash
 *Copy code
--git clone https://github.com/mohmmedshaker69/task
--cd myproject
+git clone https://github.com/mohmmedshaker69/task
+cd myproject
 
 bash
 *Copy code
